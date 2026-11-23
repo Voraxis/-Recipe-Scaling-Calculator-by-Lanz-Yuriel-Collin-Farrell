@@ -1,0 +1,176 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef2f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.recipe-card {
+  background: white;
+  width: 600px; /* Increased from 450px to make it wider */
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  overflow: hidden;
+  border: 1px solid #dbe2ef;
+}
+
+.card-header {
+  background-color: #3f72af;
+  color: white;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.recipe-number {
+  background: white;
+  color: #3f72af;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.card-body {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.recipe-visual {
+  width: 120px;       /* Fixed width for the image box */
+  min-width: 120px;   /* Prevents shrinking */
+  height: 120px;
+  background-color: #f9f7f7;
+  border: 1px solid #dbe2ef;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.pancake-graphic {
+  font-size: 4rem;
+}
+
+.recipe-details {
+  flex: 1;            /* Fills remaining spaces equally */
+  min-width: 0;       /* Standard CSS fix to enforce flexible layout sizing constraints */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Changed from flex-start to keep items aligned horizontally */
+  margin-bottom: 15px;
+  gap: 15px; /* Adds space so elements don't crash into each other */
+}
+
+.details-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #112d4e;
+}
+
+.subtext {
+  margin: 2px 0 0 0;
+  font-size: 0.85rem;
+  color: #7f8c8d;
+}
+
+.serving-selector {
+  text-align: right;
+}
+
+.label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #7f8c8d;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 4px;
+}
+
+.serving-btn {
+  background: #f9f7f7;
+  border: 1px solid #dbe2ef;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #3f72af;
+  transition: all 0.2s;
+}
+
+.serving-btn:hover {
+  background: #dbe2ef;
+}
+
+.serving-btn.active {
+  background: #3f72af;
+  color: white;
+  border-color: #3f72af;
+}
+
+.ingredients-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ingredients-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 0.95rem;
+  color: #112d4e;
+}
+
+.ingredients-list li:last-child {
+  border-bottom: none;
+}
+
+.qty {
+  font-weight: 600;
+  color: #3f72af;
+}
+
+.recipe-dropdown {
+  width: 230px; /* Forces a fixed, uniform text window width */
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #112d4e;
+  border: 1px solid transparent;
+  background: transparent;
+  padding: 4px 0;
+  cursor: pointer;
+  font-family: inherit;
+  outline: none;
+  border-radius: 4px;
+}
+
+
+.recipe-dropdown:hover, .recipe-dropdown:focus {
+  border-bottom: 1px dashed #3f72af;
+}
