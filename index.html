@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Scaling Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="recipe-card">
+    <!-- Header -->
+    <div class="card-header">
+      <span class="recipe-number">9</span>
+      <h2>Recipe Scaling Calculator</h2>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="card-body">
+      <!-- Left Column: Image (Student A) -->
+      <div class="recipe-visual">
+        <div class="pancake-graphic">
+          🥞
+        </div>
+      </div>
+
+      <!-- Right Column: Info & Scaling (Student A & B) -->
+      <div class="recipe-details">
+        <div class="details-header">
+  <div>
+    <!-- Dropdown Selector to switch recipes -->
+    <select id="recipe-select" class="recipe-dropdown">
+      <option value="pancakes">Pancakes</option>
+      <option value="waffles">Belgian Waffles</option>
+      <option value="cookies">Chocolate Chip Cookies</option>
+    </select>
+    <!-- Dynamic Category Subtext -->
+    <p id="recipe-category" class="subtext">Breakfast</p>
+  </div>
+  
+  <!-- Serving Buttons -->
+  <div class="serving-selector">
+    <span class="label">Servings</span>
+    <div class="btn-group">
+      <button class="serving-btn active" data-servings="2">2</button>
+      <button class="serving-btn" data-servings="4">4</button>
+      <button class="serving-btn" data-servings="8">8</button>
+    </div>
+  </div>
+</div>
+
+        <!-- Ingredients List (Student B Text Updates) -->
+        <ul id="ingredients-list" class="ingredients-list">
+          <!-- Dynamically populated by JS -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- Hindi ito full AI work you hater fuc- -->
